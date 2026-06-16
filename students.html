@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Student Management
+    </title>
+
+
+    <link rel="stylesheet" href="./students.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="sidebar">
+
+
+        <h2>
+            📚 Attendance
+        </h2>
+
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+
+        <a href="students.html" class="active">
+            Students
+        </a>
+
+
+        <a href="attendance.html">
+            Attendance
+        </a>
+
+
+        <a href="reports.html">
+            Reports
+        </a>
+
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+
+        <h1>
+            Student Management
+        </h1>
+
+
+
+        <div class="student-form">
+
+
+            <input type="text" id="studentName" placeholder="Enter Student Name">
+
+
+            <input type="email" id="studentEmail" placeholder="Enter Email">
+
+
+            <input type="text" id="studentDept" placeholder="Department">
+
+
+            <button onclick="addStudent()">
+                Add Student
+            </button>
+
+
+        </div>
+
+
+
+
+
+        <div class="search-box">
+
+            <input type="text" id="search" placeholder="Search Student" onkeyup="searchStudent()">
+
+
+        </div>
+
+
+
+
+
+        <table>
+
+
+            <thead>
+
+
+                <tr>
+
+                    <th>
+                        ID
+                    </th>
+
+
+                    <th>
+                        Name
+                    </th>
+
+
+                    <th>
+                        Email
+                    </th>
+
+
+                    <th>
+                        Department
+                    </th>
+
+
+                    <th>
+                        Action
+                    </th>
+
+
+                </tr>
+
+
+            </thead>
+
+
+
+            <tbody id="studentTable">
+
+
+            </tbody>
+
+
+
+        </table>
+
+
+
+    </div>
+
+
+
+    <script src="./students.js"></script>
+
+
+</body>
+
+</html>

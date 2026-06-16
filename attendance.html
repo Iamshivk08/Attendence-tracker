@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Attendance Management
+    </title>
+
+    <link rel="stylesheet" href="./attendance.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="sidebar">
+
+
+        <h2>
+            📚 Attendance
+        </h2>
+
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+
+        <a href="students.html">
+            Students
+        </a>
+
+
+        <a href="attendance.html" class="active">
+            Attendance
+        </a>
+
+
+        <a href="reports.html">
+            Reports
+        </a>
+
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+
+        <h1>
+            Mark Attendance
+        </h1>
+
+
+
+        <div class="attendance-header">
+
+
+            <div>
+
+                <label>
+                    Select Date
+                </label>
+
+                <input type="date" id="date">
+
+
+            </div>
+
+
+
+            <div>
+
+                <label>
+                    Search Student
+                </label>
+
+                <input type="text" id="search" placeholder="Search..." onkeyup="searchStudent()">
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="table-box">
+
+
+            <table>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            ID
+                        </th>
+
+
+                        <th>
+                            Student Name
+                        </th>
+
+
+                        <th>
+                            Department
+                        </th>
+
+
+                        <th>
+                            Status
+                        </th>
+
+
+                    </tr>
+
+
+                </thead>
+
+
+
+                <tbody id="attendanceTable">
+
+
+                    <tr>
+
+                        <td>
+                            1
+                        </td>
+
+
+                        <td>
+                            Siva
+                        </td>
+
+
+                        <td>
+                            CSE
+                        </td>
+
+
+                        <td>
+
+
+                            <select class="status">
+
+                                <option>
+                                    Present
+                                </option>
+
+
+                                <option>
+                                    Absent
+                                </option>
+
+
+                            </select>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            2
+                        </td>
+
+
+                        <td>
+                            Balaji
+                        </td>
+
+
+                        <td>
+                            ECE
+                        </td>
+
+
+                        <td>
+
+
+                            <select class="status">
+
+                                <option>
+                                    Present
+                                </option>
+
+
+                                <option>
+                                    Absent
+                                </option>
+
+
+                            </select>
+
+
+                        </td>
+
+
+                    </tr>
+
+
+                </tbody>
+
+
+
+            </table>
+
+
+        </div>
+
+
+
+
+
+        <button class="save-btn" onclick="saveAttendance()">
+
+            Save Attendance
+
+        </button>
+
+
+
+    </div>
+
+
+
+
+    <script src="./attendance.js"></script>
+
+
+</body>
+
+</html>

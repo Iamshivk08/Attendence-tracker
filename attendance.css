@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+
+}
+
+
+
+body {
+
+    background: #f1f5f9;
+
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+
+    position: fixed;
+
+    width: 260px;
+
+    height: 100vh;
+
+    background:
+
+        linear-gradient(180deg,
+            #0f172a,
+            #2563eb);
+
+    padding: 25px;
+
+    color: white;
+
+}
+
+
+.sidebar h2 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.sidebar a {
+
+    display: block;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-radius: 10px;
+
+}
+
+
+
+.sidebar a:hover,
+.active {
+
+    background:
+
+        rgba(255, 255, 255, .2);
+
+}
+
+
+
+
+.sidebar button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 40px;
+
+    border: none;
+
+    background: #ef4444;
+
+    color: white;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+/* Main */
+
+.main {
+
+    margin-left: 290px;
+
+    padding: 40px;
+
+}
+
+
+
+.main h1 {
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+/* Header */
+
+
+.attendance-header {
+
+
+    display: flex;
+
+    gap: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px #ddd;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.attendance-header label {
+
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.attendance-header input {
+
+
+    padding: 12px;
+
+    width: 250px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+}
+
+
+
+
+
+/* Table */
+
+
+.table-box {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px #ddd;
+
+}
+
+
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+
+th {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+
+
+td {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+
+
+.status {
+
+
+    padding: 8px 20px;
+
+    border-radius: 20px;
+
+    border: 1px solid #ddd;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* Button */
+
+
+.save-btn {
+
+
+    margin-top: 30px;
+
+
+    padding: 15px 40px;
+
+
+    background: #16a34a;
+
+
+    color: white;
+
+
+    border: none;
+
+
+    border-radius: 50px;
+
+
+    font-size: 17px;
+
+
+    cursor: pointer;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+.save-btn:hover {
+
+
+    transform:
+
+        translateY(-5px);
+
+
+    background: #15803d;
+
+
+}
+
+
+
+
+@media(max-width:900px) {
+
+
+    .sidebar {
+
+        width: 80px;
+
+    }
+
+
+    .main {
+
+        margin-left: 100px;
+
+    }
+
+
+    .attendance-header {
+
+        flex-direction: column;
+
+    }
+
+
+}

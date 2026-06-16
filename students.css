@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+
+}
+
+
+body {
+
+    background: #f1f5f9;
+
+}
+
+
+/* Sidebar */
+
+.sidebar {
+
+    position: fixed;
+
+    width: 260px;
+
+    height: 100vh;
+
+    background:
+        linear-gradient(180deg,
+            #0f172a,
+            #2563eb);
+
+    padding: 25px;
+
+    color: white;
+
+}
+
+
+.sidebar h2 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.sidebar a {
+
+    display: block;
+
+    color: white;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+}
+
+
+.sidebar a:hover,
+.active {
+
+    background:
+        rgba(255, 255, 255, .2);
+
+}
+
+
+
+.sidebar button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 40px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* Main */
+
+.main {
+
+    margin-left: 290px;
+
+    padding: 40px;
+
+}
+
+
+.main h1 {
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+/* Form */
+
+
+.student-form {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    gap: 15px;
+
+    box-shadow:
+        0 10px 25px #ddd;
+
+}
+
+
+
+.student-form input {
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+}
+
+
+
+.student-form button {
+
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* Search */
+
+.search-box {
+
+    margin: 30px 0;
+
+}
+
+
+.search-box input {
+
+    width: 350px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+}
+
+
+
+
+/* Table */
+
+
+table {
+
+    width: 100%;
+
+    background: white;
+
+    border-collapse: collapse;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 25px #ddd;
+
+}
+
+
+
+th {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+
+
+td {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+
+.delete {
+
+    background: #ef4444;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+@media(max-width:900px) {
+
+
+    .sidebar {
+
+        width: 80px;
+
+    }
+
+
+    .main {
+
+        margin-left: 100px;
+
+    }
+
+
+    .student-form {
+
+        flex-direction: column;
+
+    }
+
+
+}
